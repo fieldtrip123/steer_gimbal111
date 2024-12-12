@@ -1,0 +1,3 @@
+D:/steer_gimbal/cmake-build-debug/CMakeFiles/steer_gimbal.elf.dir
+D:/steer_gimbal/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/steer_gimbal/cmake-build-debug/CMakeFiles/rebuild_cache.dir
