@@ -118,9 +118,6 @@ int main(void)
 {
     control_yaw_6020(boardA_info1.UART_yaw);
 }
-else  {
-    set_m6020_v(0,gimbal_pitch_speed_pid.output);
-}
 
         shoot();
       HAL_Delay(1);

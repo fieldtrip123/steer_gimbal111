@@ -7,7 +7,7 @@ C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thum
 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_cmpsf2.o)
                               CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj (__aeabi_fcmple)
 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixsfsi.o)
-                              CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj (__aeabi_f2iz)
+                              CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj (__aeabi_f2iz)
 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
                               CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj (__aeabi_uldivmod)
 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
@@ -1105,7 +1105,7 @@ LOAD C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1
                 0x08000000                g_pfnVectors
                 0x08000188                        . = ALIGN (0x4)
 
-.text           0x08000188     0x3714
+.text           0x08000188     0x3708
                 0x08000188                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000188      0x168 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_arm_mulsf3.o)
@@ -1159,519 +1159,519 @@ LOAD C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1
  .text.frame_dummy
                 0x080006e0       0x24 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
  .text.MX_CAN1_Init
-                0x08000704       0x40 CMakeFiles/steer_gimbal.elf.dir/Core/Src/can.c.obj
+                0x08000704       0x44 CMakeFiles/steer_gimbal.elf.dir/Core/Src/can.c.obj
                 0x08000704                MX_CAN1_Init
  .text.MX_CAN2_Init
-                0x08000744       0x40 CMakeFiles/steer_gimbal.elf.dir/Core/Src/can.c.obj
-                0x08000744                MX_CAN2_Init
+                0x08000748       0x44 CMakeFiles/steer_gimbal.elf.dir/Core/Src/can.c.obj
+                0x08000748                MX_CAN2_Init
  .text.HAL_CAN_MspInit
-                0x08000784      0x140 CMakeFiles/steer_gimbal.elf.dir/Core/Src/can.c.obj
-                0x08000784                HAL_CAN_MspInit
+                0x0800078c      0x140 CMakeFiles/steer_gimbal.elf.dir/Core/Src/can.c.obj
+                0x0800078c                HAL_CAN_MspInit
  .text.MX_DMA_Init
-                0x080008c4       0x34 CMakeFiles/steer_gimbal.elf.dir/Core/Src/dma.c.obj
-                0x080008c4                MX_DMA_Init
+                0x080008cc       0x34 CMakeFiles/steer_gimbal.elf.dir/Core/Src/dma.c.obj
+                0x080008cc                MX_DMA_Init
  .text.MX_GPIO_Init
-                0x080008f8       0xa8 CMakeFiles/steer_gimbal.elf.dir/Core/Src/gpio.c.obj
-                0x080008f8                MX_GPIO_Init
+                0x08000900       0xa8 CMakeFiles/steer_gimbal.elf.dir/Core/Src/gpio.c.obj
+                0x08000900                MX_GPIO_Init
  .text.HAL_UARTEx_RxEventCallback
-                0x080009a0       0x34 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
-                0x080009a0                HAL_UARTEx_RxEventCallback
+                0x080009a8       0x34 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
+                0x080009a8                HAL_UARTEx_RxEventCallback
  .text.Error_Handler
-                0x080009d4        0x4 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
-                0x080009d4                Error_Handler
+                0x080009dc        0x4 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
+                0x080009dc                Error_Handler
  .text.SystemClock_Config
-                0x080009d8       0xa8 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
-                0x080009d8                SystemClock_Config
- .text.main     0x08000a80       0x78 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
-                0x08000a80                main
+                0x080009e0       0xa8 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
+                0x080009e0                SystemClock_Config
+ .text.main     0x08000a88       0x64 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
+                0x08000a88                main
  .text.HAL_MspInit
-                0x08000af8       0x38 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x08000af8                HAL_MspInit
+                0x08000aec       0x38 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08000aec                HAL_MspInit
  .text.NMI_Handler
-                0x08000b30        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b30                NMI_Handler
+                0x08000b24        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b24                NMI_Handler
  .text.HardFault_Handler
-                0x08000b32        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b32                HardFault_Handler
+                0x08000b26        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b26                HardFault_Handler
  .text.MemManage_Handler
-                0x08000b34        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b34                MemManage_Handler
+                0x08000b28        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b28                MemManage_Handler
  .text.BusFault_Handler
-                0x08000b36        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b36                BusFault_Handler
+                0x08000b2a        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b2a                BusFault_Handler
  .text.UsageFault_Handler
-                0x08000b38        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b38                UsageFault_Handler
+                0x08000b2c        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b2c                UsageFault_Handler
  .text.SVC_Handler
-                0x08000b3a        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b3a                SVC_Handler
+                0x08000b2e        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b2e                SVC_Handler
  .text.DebugMon_Handler
-                0x08000b3c        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b3c                DebugMon_Handler
+                0x08000b30        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b30                DebugMon_Handler
  .text.PendSV_Handler
-                0x08000b3e        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b3e                PendSV_Handler
+                0x08000b32        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b32                PendSV_Handler
  .text.SysTick_Handler
-                0x08000b40        0x8 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b40                SysTick_Handler
+                0x08000b34        0x8 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b34                SysTick_Handler
  .text.DMA1_Stream1_IRQHandler
-                0x08000b48       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b48                DMA1_Stream1_IRQHandler
+                0x08000b3c       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b3c                DMA1_Stream1_IRQHandler
  .text.CAN1_TX_IRQHandler
-                0x08000b58       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b58                CAN1_TX_IRQHandler
+                0x08000b4c       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b4c                CAN1_TX_IRQHandler
  .text.CAN1_RX0_IRQHandler
-                0x08000b68       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b68                CAN1_RX0_IRQHandler
+                0x08000b5c       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b5c                CAN1_RX0_IRQHandler
  .text.USART3_IRQHandler
-                0x08000b78       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b78                USART3_IRQHandler
+                0x08000b6c       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b6c                USART3_IRQHandler
  .text.CAN2_TX_IRQHandler
-                0x08000b88       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b88                CAN2_TX_IRQHandler
+                0x08000b7c       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b7c                CAN2_TX_IRQHandler
  .text.CAN2_RX1_IRQHandler
-                0x08000b98       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08000b98                CAN2_RX1_IRQHandler
+                0x08000b8c       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08000b8c                CAN2_RX1_IRQHandler
  .text.SystemInit
-                0x08000ba8        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj
-                0x08000ba8                SystemInit
- *fill*         0x08000baa        0x2 
+                0x08000b9c        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj
+                0x08000b9c                SystemInit
+ *fill*         0x08000b9e        0x2 
  .text.MX_USART3_UART_Init
-                0x08000bac       0x3c CMakeFiles/steer_gimbal.elf.dir/Core/Src/usart.c.obj
-                0x08000bac                MX_USART3_UART_Init
+                0x08000ba0       0x3c CMakeFiles/steer_gimbal.elf.dir/Core/Src/usart.c.obj
+                0x08000ba0                MX_USART3_UART_Init
  .text.HAL_UART_MspInit
-                0x08000be8       0xbc CMakeFiles/steer_gimbal.elf.dir/Core/Src/usart.c.obj
-                0x08000be8                HAL_UART_MspInit
+                0x08000bdc       0xbc CMakeFiles/steer_gimbal.elf.dir/Core/Src/usart.c.obj
+                0x08000bdc                HAL_UART_MspInit
  .text.Reset_Handler
-                0x08000ca4       0x50 CMakeFiles/steer_gimbal.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
-                0x08000ca4                Reset_Handler
+                0x08000c98       0x50 CMakeFiles/steer_gimbal.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
+                0x08000c98                Reset_Handler
  .text.Default_Handler
-                0x08000cf4        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
-                0x08000cf4                RTC_Alarm_IRQHandler
-                0x08000cf4                HASH_RNG_IRQHandler
-                0x08000cf4                EXTI2_IRQHandler
-                0x08000cf4                TIM8_CC_IRQHandler
-                0x08000cf4                TIM1_CC_IRQHandler
-                0x08000cf4                DMA2_Stream5_IRQHandler
-                0x08000cf4                DMA1_Stream5_IRQHandler
-                0x08000cf4                PVD_IRQHandler
-                0x08000cf4                SDIO_IRQHandler
-                0x08000cf4                TAMP_STAMP_IRQHandler
-                0x08000cf4                EXTI3_IRQHandler
-                0x08000cf4                TIM8_TRG_COM_TIM14_IRQHandler
-                0x08000cf4                TIM1_UP_TIM10_IRQHandler
-                0x08000cf4                TIM8_UP_TIM13_IRQHandler
-                0x08000cf4                I2C3_ER_IRQHandler
-                0x08000cf4                EXTI0_IRQHandler
-                0x08000cf4                I2C2_EV_IRQHandler
-                0x08000cf4                DMA1_Stream2_IRQHandler
-                0x08000cf4                FPU_IRQHandler
-                0x08000cf4                OTG_HS_WKUP_IRQHandler
-                0x08000cf4                CAN2_SCE_IRQHandler
-                0x08000cf4                DMA2_Stream2_IRQHandler
-                0x08000cf4                SPI1_IRQHandler
-                0x08000cf4                TIM6_DAC_IRQHandler
-                0x08000cf4                TIM1_BRK_TIM9_IRQHandler
-                0x08000cf4                DCMI_IRQHandler
-                0x08000cf4                CAN2_RX0_IRQHandler
-                0x08000cf4                DMA2_Stream3_IRQHandler
-                0x08000cf4                USART6_IRQHandler
-                0x08000cf4                CAN1_RX1_IRQHandler
-                0x08000cf4                UART5_IRQHandler
-                0x08000cf4                DMA2_Stream0_IRQHandler
-                0x08000cf4                TIM4_IRQHandler
-                0x08000cf4                I2C1_EV_IRQHandler
-                0x08000cf4                DMA1_Stream6_IRQHandler
-                0x08000cf4                UART4_IRQHandler
-                0x08000cf4                TIM3_IRQHandler
-                0x08000cf4                RCC_IRQHandler
-                0x08000cf4                TIM8_BRK_TIM12_IRQHandler
-                0x08000cf4                Default_Handler
-                0x08000cf4                EXTI15_10_IRQHandler
-                0x08000cf4                ADC_IRQHandler
-                0x08000cf4                DMA1_Stream7_IRQHandler
-                0x08000cf4                TIM7_IRQHandler
-                0x08000cf4                TIM5_IRQHandler
-                0x08000cf4                DMA2_Stream7_IRQHandler
-                0x08000cf4                I2C3_EV_IRQHandler
-                0x08000cf4                EXTI9_5_IRQHandler
-                0x08000cf4                RTC_WKUP_IRQHandler
-                0x08000cf4                ETH_WKUP_IRQHandler
-                0x08000cf4                SPI2_IRQHandler
-                0x08000cf4                OTG_HS_EP1_IN_IRQHandler
-                0x08000cf4                DMA1_Stream0_IRQHandler
-                0x08000cf4                EXTI4_IRQHandler
-                0x08000cf4                FSMC_IRQHandler
-                0x08000cf4                ETH_IRQHandler
-                0x08000cf4                OTG_HS_EP1_OUT_IRQHandler
-                0x08000cf4                WWDG_IRQHandler
-                0x08000cf4                TIM2_IRQHandler
-                0x08000cf4                OTG_FS_WKUP_IRQHandler
-                0x08000cf4                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08000cf4                OTG_HS_IRQHandler
-                0x08000cf4                EXTI1_IRQHandler
-                0x08000cf4                USART2_IRQHandler
-                0x08000cf4                I2C2_ER_IRQHandler
-                0x08000cf4                DMA2_Stream1_IRQHandler
-                0x08000cf4                CAN1_SCE_IRQHandler
-                0x08000cf4                FLASH_IRQHandler
-                0x08000cf4                DMA2_Stream4_IRQHandler
-                0x08000cf4                USART1_IRQHandler
-                0x08000cf4                OTG_FS_IRQHandler
-                0x08000cf4                SPI3_IRQHandler
-                0x08000cf4                DMA1_Stream4_IRQHandler
-                0x08000cf4                I2C1_ER_IRQHandler
-                0x08000cf4                DMA2_Stream6_IRQHandler
-                0x08000cf4                DMA1_Stream3_IRQHandler
- *fill*         0x08000cf6        0x2 
+                0x08000ce8        0x2 CMakeFiles/steer_gimbal.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
+                0x08000ce8                RTC_Alarm_IRQHandler
+                0x08000ce8                HASH_RNG_IRQHandler
+                0x08000ce8                EXTI2_IRQHandler
+                0x08000ce8                TIM8_CC_IRQHandler
+                0x08000ce8                TIM1_CC_IRQHandler
+                0x08000ce8                DMA2_Stream5_IRQHandler
+                0x08000ce8                DMA1_Stream5_IRQHandler
+                0x08000ce8                PVD_IRQHandler
+                0x08000ce8                SDIO_IRQHandler
+                0x08000ce8                TAMP_STAMP_IRQHandler
+                0x08000ce8                EXTI3_IRQHandler
+                0x08000ce8                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08000ce8                TIM1_UP_TIM10_IRQHandler
+                0x08000ce8                TIM8_UP_TIM13_IRQHandler
+                0x08000ce8                I2C3_ER_IRQHandler
+                0x08000ce8                EXTI0_IRQHandler
+                0x08000ce8                I2C2_EV_IRQHandler
+                0x08000ce8                DMA1_Stream2_IRQHandler
+                0x08000ce8                FPU_IRQHandler
+                0x08000ce8                OTG_HS_WKUP_IRQHandler
+                0x08000ce8                CAN2_SCE_IRQHandler
+                0x08000ce8                DMA2_Stream2_IRQHandler
+                0x08000ce8                SPI1_IRQHandler
+                0x08000ce8                TIM6_DAC_IRQHandler
+                0x08000ce8                TIM1_BRK_TIM9_IRQHandler
+                0x08000ce8                DCMI_IRQHandler
+                0x08000ce8                CAN2_RX0_IRQHandler
+                0x08000ce8                DMA2_Stream3_IRQHandler
+                0x08000ce8                USART6_IRQHandler
+                0x08000ce8                CAN1_RX1_IRQHandler
+                0x08000ce8                UART5_IRQHandler
+                0x08000ce8                DMA2_Stream0_IRQHandler
+                0x08000ce8                TIM4_IRQHandler
+                0x08000ce8                I2C1_EV_IRQHandler
+                0x08000ce8                DMA1_Stream6_IRQHandler
+                0x08000ce8                UART4_IRQHandler
+                0x08000ce8                TIM3_IRQHandler
+                0x08000ce8                RCC_IRQHandler
+                0x08000ce8                TIM8_BRK_TIM12_IRQHandler
+                0x08000ce8                Default_Handler
+                0x08000ce8                EXTI15_10_IRQHandler
+                0x08000ce8                ADC_IRQHandler
+                0x08000ce8                DMA1_Stream7_IRQHandler
+                0x08000ce8                TIM7_IRQHandler
+                0x08000ce8                TIM5_IRQHandler
+                0x08000ce8                DMA2_Stream7_IRQHandler
+                0x08000ce8                I2C3_EV_IRQHandler
+                0x08000ce8                EXTI9_5_IRQHandler
+                0x08000ce8                RTC_WKUP_IRQHandler
+                0x08000ce8                ETH_WKUP_IRQHandler
+                0x08000ce8                SPI2_IRQHandler
+                0x08000ce8                OTG_HS_EP1_IN_IRQHandler
+                0x08000ce8                DMA1_Stream0_IRQHandler
+                0x08000ce8                EXTI4_IRQHandler
+                0x08000ce8                FSMC_IRQHandler
+                0x08000ce8                ETH_IRQHandler
+                0x08000ce8                OTG_HS_EP1_OUT_IRQHandler
+                0x08000ce8                WWDG_IRQHandler
+                0x08000ce8                TIM2_IRQHandler
+                0x08000ce8                OTG_FS_WKUP_IRQHandler
+                0x08000ce8                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08000ce8                OTG_HS_IRQHandler
+                0x08000ce8                EXTI1_IRQHandler
+                0x08000ce8                USART2_IRQHandler
+                0x08000ce8                I2C2_ER_IRQHandler
+                0x08000ce8                DMA2_Stream1_IRQHandler
+                0x08000ce8                CAN1_SCE_IRQHandler
+                0x08000ce8                FLASH_IRQHandler
+                0x08000ce8                DMA2_Stream4_IRQHandler
+                0x08000ce8                USART1_IRQHandler
+                0x08000ce8                OTG_FS_IRQHandler
+                0x08000ce8                SPI3_IRQHandler
+                0x08000ce8                DMA1_Stream4_IRQHandler
+                0x08000ce8                I2C1_ER_IRQHandler
+                0x08000ce8                DMA2_Stream6_IRQHandler
+                0x08000ce8                DMA1_Stream3_IRQHandler
+ *fill*         0x08000cea        0x2 
  .text.HAL_InitTick
-                0x08000cf8       0x4c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08000cf8                HAL_InitTick
+                0x08000cec       0x4c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08000cec                HAL_InitTick
  .text.HAL_Init
-                0x08000d44       0x34 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08000d44                HAL_Init
+                0x08000d38       0x34 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08000d38                HAL_Init
  .text.HAL_IncTick
-                0x08000d78       0x18 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08000d78                HAL_IncTick
+                0x08000d6c       0x18 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08000d6c                HAL_IncTick
  .text.HAL_GetTick
-                0x08000d90        0xc CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08000d90                HAL_GetTick
+                0x08000d84        0xc CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08000d84                HAL_GetTick
  .text.HAL_Delay
-                0x08000d9c       0x28 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x08000d9c                HAL_Delay
+                0x08000d90       0x28 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x08000d90                HAL_Delay
  .text.HAL_CAN_Init
-                0x08000dc4      0x14c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x08000dc4                HAL_CAN_Init
+                0x08000db8      0x14c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x08000db8                HAL_CAN_Init
  .text.HAL_CAN_ConfigFilter
-                0x08000f10      0x13c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x08000f10                HAL_CAN_ConfigFilter
+                0x08000f04      0x13c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x08000f04                HAL_CAN_ConfigFilter
  .text.HAL_CAN_Start
-                0x0800104c       0x5c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x0800104c                HAL_CAN_Start
+                0x08001040       0x5c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x08001040                HAL_CAN_Start
  .text.HAL_CAN_AddTxMessage
-                0x080010a8       0xea CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x080010a8                HAL_CAN_AddTxMessage
+                0x0800109c       0xea CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x0800109c                HAL_CAN_AddTxMessage
  .text.HAL_CAN_GetTxMailboxesFreeLevel
-                0x08001192       0x32 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x08001192                HAL_CAN_GetTxMailboxesFreeLevel
+                0x08001186       0x32 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x08001186                HAL_CAN_GetTxMailboxesFreeLevel
  .text.HAL_CAN_GetRxMessage
-                0x080011c4      0x16a CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x080011c4                HAL_CAN_GetRxMessage
+                0x080011b8      0x16a CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x080011b8                HAL_CAN_GetRxMessage
  .text.HAL_CAN_ActivateNotification
-                0x0800132e       0x24 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x0800132e                HAL_CAN_ActivateNotification
+                0x08001322       0x24 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x08001322                HAL_CAN_ActivateNotification
  .text.HAL_CAN_TxMailbox0CompleteCallback
-                0x08001352        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x08001352                HAL_CAN_TxMailbox0CompleteCallback
+                0x08001346        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x08001346                HAL_CAN_TxMailbox0CompleteCallback
  .text.HAL_CAN_TxMailbox1CompleteCallback
-                0x08001354        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x08001354                HAL_CAN_TxMailbox1CompleteCallback
+                0x08001348        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x08001348                HAL_CAN_TxMailbox1CompleteCallback
  .text.HAL_CAN_TxMailbox2CompleteCallback
-                0x08001356        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x08001356                HAL_CAN_TxMailbox2CompleteCallback
+                0x0800134a        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x0800134a                HAL_CAN_TxMailbox2CompleteCallback
  .text.HAL_CAN_TxMailbox0AbortCallback
-                0x08001358        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x08001358                HAL_CAN_TxMailbox0AbortCallback
+                0x0800134c        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x0800134c                HAL_CAN_TxMailbox0AbortCallback
  .text.HAL_CAN_TxMailbox1AbortCallback
-                0x0800135a        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x0800135a                HAL_CAN_TxMailbox1AbortCallback
+                0x0800134e        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x0800134e                HAL_CAN_TxMailbox1AbortCallback
  .text.HAL_CAN_TxMailbox2AbortCallback
-                0x0800135c        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x0800135c                HAL_CAN_TxMailbox2AbortCallback
+                0x08001350        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x08001350                HAL_CAN_TxMailbox2AbortCallback
  .text.HAL_CAN_RxFifo0FullCallback
-                0x0800135e        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x0800135e                HAL_CAN_RxFifo0FullCallback
+                0x08001352        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x08001352                HAL_CAN_RxFifo0FullCallback
  .text.HAL_CAN_RxFifo1FullCallback
-                0x08001360        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x08001360                HAL_CAN_RxFifo1FullCallback
+                0x08001354        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x08001354                HAL_CAN_RxFifo1FullCallback
  .text.HAL_CAN_SleepCallback
-                0x08001362        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x08001362                HAL_CAN_SleepCallback
+                0x08001356        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x08001356                HAL_CAN_SleepCallback
  .text.HAL_CAN_WakeUpFromRxMsgCallback
-                0x08001364        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x08001364                HAL_CAN_WakeUpFromRxMsgCallback
+                0x08001358        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x08001358                HAL_CAN_WakeUpFromRxMsgCallback
  .text.HAL_CAN_ErrorCallback
-                0x08001366        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x08001366                HAL_CAN_ErrorCallback
+                0x0800135a        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x0800135a                HAL_CAN_ErrorCallback
  .text.HAL_CAN_IRQHandler
-                0x08001368      0x250 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
-                0x08001368                HAL_CAN_IRQHandler
+                0x0800135c      0x250 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+                0x0800135c                HAL_CAN_IRQHandler
  .text.__NVIC_EnableIRQ
-                0x080015b8       0x1c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080015ac       0x1c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x080015d4       0x28 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x080015c8       0x28 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x080015fc       0x3e CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- *fill*         0x0800163a        0x2 
+                0x080015f0       0x3e CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ *fill*         0x0800162e        0x2 
  .text.HAL_NVIC_SetPriorityGrouping
-                0x0800163c       0x24 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x0800163c                HAL_NVIC_SetPriorityGrouping
+                0x08001630       0x24 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08001630                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08001660       0x20 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x08001660                HAL_NVIC_SetPriority
+                0x08001654       0x20 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08001654                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x08001680        0x8 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x08001680                HAL_NVIC_EnableIRQ
+                0x08001674        0x8 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x08001674                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x08001688       0x28 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
-                0x08001688                HAL_SYSTICK_Config
+                0x0800167c       0x28 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+                0x0800167c                HAL_SYSTICK_Config
  .text.DMA_SetConfig
-                0x080016b0       0x2c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x080016a4       0x2c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.DMA_CalcBaseAndBitshift
-                0x080016dc       0x38 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x080016d0       0x38 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
  .text.DMA_CheckFifoParam
-                0x08001714       0x8e CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- *fill*         0x080017a2        0x2 
+                0x08001708       0x8e CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ *fill*         0x08001796        0x2 
  .text.HAL_DMA_Init
-                0x080017a4       0xcc CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x080017a4                HAL_DMA_Init
+                0x08001798       0xcc CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x08001798                HAL_DMA_Init
  .text.HAL_DMA_Start_IT
-                0x08001870       0x6a CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x08001870                HAL_DMA_Start_IT
+                0x08001864       0x6a CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x08001864                HAL_DMA_Start_IT
  .text.HAL_DMA_Abort
-                0x080018da       0x94 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x080018da                HAL_DMA_Abort
+                0x080018ce       0x94 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x080018ce                HAL_DMA_Abort
  .text.HAL_DMA_Abort_IT
-                0x0800196e       0x26 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x0800196e                HAL_DMA_Abort_IT
+                0x08001962       0x26 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x08001962                HAL_DMA_Abort_IT
  .text.HAL_DMA_IRQHandler
-                0x08001994      0x1dc CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x08001994                HAL_DMA_IRQHandler
+                0x08001988      0x1dc CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x08001988                HAL_DMA_IRQHandler
  .text.HAL_GPIO_Init
-                0x08001b70      0x1f4 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x08001b70                HAL_GPIO_Init
+                0x08001b64      0x1f4 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x08001b64                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08001d64        0xc CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
-                0x08001d64                HAL_GPIO_WritePin
+                0x08001d58        0xc CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+                0x08001d58                HAL_GPIO_WritePin
  .text.HAL_RCC_OscConfig
-                0x08001d70      0x3f8 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08001d70                HAL_RCC_OscConfig
+                0x08001d64      0x3f8 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08001d64                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08002168       0xa8 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08002168                HAL_RCC_GetSysClockFreq
+                0x0800215c       0xa8 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x0800215c                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x08002210      0x160 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08002210                HAL_RCC_ClockConfig
+                0x08002204      0x160 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08002204                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x08002370        0xc CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x08002370                HAL_RCC_GetHCLKFreq
+                0x08002364        0xc CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08002364                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x0800237c       0x20 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x0800237c                HAL_RCC_GetPCLK1Freq
+                0x08002370       0x20 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08002370                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x0800239c       0x20 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
-                0x0800239c                HAL_RCC_GetPCLK2Freq
+                0x08002390       0x20 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+                0x08002390                HAL_RCC_GetPCLK2Freq
  .text.UART_EndTxTransfer
-                0x080023bc       0x20 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x080023b0       0x20 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_EndRxTransfer
-                0x080023dc       0x5c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x080023d0       0x5c CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_Transmit_IT
-                0x08002438       0x60 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0800242c       0x60 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_SetConfig
-                0x08002498      0x110 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0800248c      0x110 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.HAL_UART_Init
-                0x080025a8       0x60 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x080025a8                HAL_UART_Init
+                0x0800259c       0x60 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0800259c                HAL_UART_Init
  .text.HAL_UART_TxCpltCallback
-                0x08002608        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08002608                HAL_UART_TxCpltCallback
+                0x080025fc        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x080025fc                HAL_UART_TxCpltCallback
  .text.UART_EndTransmit_IT
-                0x0800260a       0x1a CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x080025fe       0x1a CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.HAL_UART_RxCpltCallback
-                0x08002624        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08002624                HAL_UART_RxCpltCallback
+                0x08002618        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08002618                HAL_UART_RxCpltCallback
  .text.HAL_UART_RxHalfCpltCallback
-                0x08002626        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08002626                HAL_UART_RxHalfCpltCallback
+                0x0800261a        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0800261a                HAL_UART_RxHalfCpltCallback
  .text.HAL_UART_ErrorCallback
-                0x08002628        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08002628                HAL_UART_ErrorCallback
+                0x0800261c        0x2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0800261c                HAL_UART_ErrorCallback
  .text.UART_DMAError
-                0x0800262a       0x58 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0800261e       0x58 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_DMAAbortOnError
-                0x08002682       0x10 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08002676       0x10 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_Receive_IT
-                0x08002692       0xe6 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08002686       0xe6 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.HAL_UART_IRQHandler
-                0x08002778      0x284 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08002778                HAL_UART_IRQHandler
+                0x0800276c      0x284 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x0800276c                HAL_UART_IRQHandler
  .text.UART_DMARxHalfCplt
-                0x080029fc       0x1e CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x080029f0       0x1e CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_DMAReceiveCplt
-                0x08002a1a       0x9a CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08002a0e       0x9a CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .text.UART_Start_Receive_DMA
-                0x08002ab4       0xa4 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08002ab4                UART_Start_Receive_DMA
+                0x08002aa8       0xa4 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08002aa8                UART_Start_Receive_DMA
  .text.HAL_UARTEx_ReceiveToIdle_DMA
-                0x08002b58       0x66 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
-                0x08002b58                HAL_UARTEx_ReceiveToIdle_DMA
+                0x08002b4c       0x66 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+                0x08002b4c                HAL_UARTEx_ReceiveToIdle_DMA
  .text.RemoteDataProcess
-                0x08002bbe       0x84 CMakeFiles/steer_gimbal.elf.dir/User/Snc/dr16.c.obj
-                0x08002bbe                RemoteDataProcess
- *fill*         0x08002c42        0x2 
- .text.RC_Init  0x08002c44       0x24 CMakeFiles/steer_gimbal.elf.dir/User/Snc/dr16.c.obj
-                0x08002c44                RC_Init
+                0x08002bb2       0x84 CMakeFiles/steer_gimbal.elf.dir/User/Snc/dr16.c.obj
+                0x08002bb2                RemoteDataProcess
+ *fill*         0x08002c36        0x2 
+ .text.RC_Init  0x08002c38       0x24 CMakeFiles/steer_gimbal.elf.dir/User/Snc/dr16.c.obj
+                0x08002c38                RC_Init
  .text.control_yaw_6020
-                0x08002c68       0x84 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
-                0x08002c68                control_yaw_6020
+                0x08002c5c       0x84 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
+                0x08002c5c                control_yaw_6020
  .text.control_pitch_6020
-                0x08002cec       0x84 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
-                0x08002cec                control_pitch_6020
+                0x08002ce0       0x84 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
+                0x08002ce0                control_pitch_6020
  .text.control_shoot_3508
-                0x08002d70       0x94 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
-                0x08002d70                control_shoot_3508
+                0x08002d64       0x94 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
+                0x08002d64                control_shoot_3508
  .text.control_2006
-                0x08002e04       0x44 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
-                0x08002e04                control_2006
+                0x08002df8       0x44 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
+                0x08002df8                control_2006
  .text.stop_shoot
-                0x08002e48       0x12 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
-                0x08002e48                stop_shoot
- *fill*         0x08002e5a        0x2 
- .text.shoot    0x08002e5c       0x30 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
-                0x08002e5c                shoot
+                0x08002e3c       0x12 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
+                0x08002e3c                stop_shoot
+ *fill*         0x08002e4e        0x2 
+ .text.shoot    0x08002e50       0x30 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
+                0x08002e50                shoot
  .text.my_can1_init
-                0x08002e8c       0x4c CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
-                0x08002e8c                my_can1_init
+                0x08002e80       0x4c CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
+                0x08002e80                my_can1_init
  .text.my_can2_init
-                0x08002ed8       0x4c CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
-                0x08002ed8                my_can2_init
+                0x08002ecc       0x4c CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
+                0x08002ecc                my_can2_init
  .text.set_m3508_v
-                0x08002f24       0x48 CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
-                0x08002f24                set_m3508_v
+                0x08002f18       0x48 CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
+                0x08002f18                set_m3508_v
  .text.set_m2006_v
-                0x08002f6c       0x40 CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
-                0x08002f6c                set_m2006_v
+                0x08002f60       0x40 CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
+                0x08002f60                set_m2006_v
  .text.set_m6020_v
-                0x08002fac       0x48 CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
-                0x08002fac                set_m6020_v
+                0x08002fa0       0x48 CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
+                0x08002fa0                set_m6020_v
  .text.HAL_CAN_RxFifo1MsgPendingCallback
-                0x08002ff4       0xdc CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
-                0x08002ff4                HAL_CAN_RxFifo1MsgPendingCallback
- .text.led      0x080030d0       0x3c CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
-                0x080030d0                led
+                0x08002fe8       0xdc CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
+                0x08002fe8                HAL_CAN_RxFifo1MsgPendingCallback
+ .text.led      0x080030c4       0x3c CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
+                0x080030c4                led
  .text.HAL_CAN_RxFifo0MsgPendingCallback
-                0x0800310c      0x168 CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
-                0x0800310c                HAL_CAN_RxFifo0MsgPendingCallback
+                0x08003100      0x168 CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
+                0x08003100                HAL_CAN_RxFifo0MsgPendingCallback
  .text.pid_init
-                0x08003274       0x10 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
-                0x08003274                pid_init
+                0x08003268       0x10 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
+                0x08003268                pid_init
  .text.pid_calc
-                0x08003284       0xb6 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
-                0x08003284                pid_calc
- *fill*         0x0800333a        0x2 
+                0x08003278       0xb6 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
+                0x08003278                pid_calc
+ *fill*         0x0800332e        0x2 
  .text.all_pid_init
-                0x0800333c       0xc8 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
-                0x0800333c                all_pid_init
+                0x08003330       0xc8 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
+                0x08003330                all_pid_init
  .text.__udivmoddi4
-                0x08003404      0x2bc C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x08003404                __udivmoddi4
- .text.memset   0x080036c0       0xa4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memset.o)
-                0x080036c0                memset
+                0x080033f8      0x2bc C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x080033f8                __udivmoddi4
+ .text.memset   0x080036b4       0xa4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-memset.o)
+                0x080036b4                memset
  .text.__libc_init_array
-                0x08003764       0x50 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-init.o)
-                0x08003764                __libc_init_array
+                0x08003758       0x50 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-init.o)
+                0x08003758                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x080037b4        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
-                0x080037b4                __retarget_lock_acquire_recursive
+                0x080037a8        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
+                0x080037a8                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x080037b8        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
-                0x080037b8                __retarget_lock_release_recursive
+                0x080037ac        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-lock.o)
+                0x080037ac                __retarget_lock_release_recursive
  .text.startup.register_fini
-                0x080037bc       0x14 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
- .text.atexit   0x080037d0        0xc C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-atexit.o)
-                0x080037d0                atexit
+                0x080037b0       0x14 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
+ .text.atexit   0x080037c4        0xc C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-atexit.o)
+                0x080037c4                atexit
  .text.__libc_fini_array
-                0x080037dc       0x28 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fini.o)
-                0x080037dc                __libc_fini_array
+                0x080037d0       0x28 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-fini.o)
+                0x080037d0                __libc_fini_array
  .text.__register_exitproc
-                0x08003804       0x80 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__atexit.o)
-                0x08003804                __register_exitproc
+                0x080037f8       0x80 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__atexit.o)
+                0x080037f8                __register_exitproc
  *(.glue_7)
- .glue_7        0x08003884        0x0 linker stubs
+ .glue_7        0x08003878        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08003884        0x0 linker stubs
+ .glue_7t       0x08003878        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08003884        0x0 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x08003878        0x0 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x08003884        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crti.o
-                0x08003884                _init
- .init          0x08003888        0x8 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x08003878        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crti.o
+                0x08003878                _init
+ .init          0x0800387c        0x8 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x08003890        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crti.o
-                0x08003890                _fini
- .fini          0x08003894        0x8 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtn.o
-                0x0800389c                        . = ALIGN (0x4)
-                0x0800389c                        _etext = .
+ .fini          0x08003884        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crti.o
+                0x08003884                _fini
+ .fini          0x08003888        0x8 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtn.o
+                0x08003890                        . = ALIGN (0x4)
+                0x08003890                        _etext = .
 
-.vfp11_veneer   0x0800389c        0x0
- .vfp11_veneer  0x0800389c        0x0 linker stubs
+.vfp11_veneer   0x08003890        0x0
+ .vfp11_veneer  0x08003890        0x0 linker stubs
 
-.v4_bx          0x0800389c        0x0
- .v4_bx         0x0800389c        0x0 linker stubs
+.v4_bx          0x08003890        0x0
+ .v4_bx         0x08003890        0x0 linker stubs
 
-.iplt           0x0800389c        0x0
- .iplt          0x0800389c        0x0 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x08003890        0x0
+ .iplt          0x08003890        0x0 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x0800389c       0x20
-                0x0800389c                        . = ALIGN (0x4)
+.rodata         0x08003890       0x20
+                0x08003890                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.APBPrescTable
-                0x0800389c        0x8 CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj
-                0x0800389c                APBPrescTable
+                0x08003890        0x8 CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj
+                0x08003890                APBPrescTable
  .rodata.AHBPrescTable
-                0x080038a4       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj
-                0x080038a4                AHBPrescTable
+                0x08003898       0x10 CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj
+                0x08003898                AHBPrescTable
  .rodata.flagBitshiftOffset.0
-                0x080038b4        0x8 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
-                0x080038bc                        . = ALIGN (0x4)
+                0x080038a8        0x8 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+                0x080038b0                        . = ALIGN (0x4)
 
-.ARM.extab      0x080038bc        0x0
-                0x080038bc                        . = ALIGN (0x4)
+.ARM.extab      0x080038b0        0x0
+                0x080038b0                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x080038bc                        . = ALIGN (0x4)
+                0x080038b0                        . = ALIGN (0x4)
 
-.ARM            0x080038bc        0x8
-                0x080038bc                        . = ALIGN (0x4)
-                0x080038bc                        __exidx_start = .
+.ARM            0x080038b0        0x8
+                0x080038b0                        . = ALIGN (0x4)
+                0x080038b0                        __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.__udivmoddi4
-                0x080038bc        0x8 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x080038c4                        __exidx_end = .
-                0x080038c4                        . = ALIGN (0x4)
+                0x080038b0        0x8 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x080038b8                        __exidx_end = .
+                0x080038b8                        . = ALIGN (0x4)
 
-.preinit_array  0x080038c4        0x0
-                0x080038c4                        . = ALIGN (0x4)
-                0x080038c4                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080038b8        0x0
+                0x080038b8                        . = ALIGN (0x4)
+                0x080038b8                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080038c4                        PROVIDE (__preinit_array_end = .)
-                0x080038c4                        . = ALIGN (0x4)
+                0x080038b8                        PROVIDE (__preinit_array_end = .)
+                0x080038b8                        . = ALIGN (0x4)
 
-.init_array     0x080038c4        0x8
-                0x080038c4                        . = ALIGN (0x4)
-                0x080038c4                        PROVIDE (__init_array_start = .)
+.init_array     0x080038b8        0x8
+                0x080038b8                        . = ALIGN (0x4)
+                0x080038b8                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x080038c4        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
+                0x080038b8        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libg.a(libc_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x080038c8        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x080038cc                        PROVIDE (__init_array_end = .)
-                0x080038cc                        . = ALIGN (0x4)
+ .init_array    0x080038bc        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x080038c0                        PROVIDE (__init_array_end = .)
+                0x080038c0                        . = ALIGN (0x4)
 
-.fini_array     0x080038cc        0x4
-                0x080038cc                        . = ALIGN (0x4)
-                0x080038cc                        PROVIDE (__fini_array_start = .)
+.fini_array     0x080038c0        0x4
+                0x080038c0                        . = ALIGN (0x4)
+                0x080038c0                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080038cc        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x080038d0                        PROVIDE (__fini_array_end = .)
-                0x080038d0                        . = ALIGN (0x4)
-                0x080038d0                        _sidata = LOADADDR (.data)
+ .fini_array    0x080038c0        0x4 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x080038c4                        PROVIDE (__fini_array_end = .)
+                0x080038c4                        . = ALIGN (0x4)
+                0x080038c4                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x080038d0        0x0
- .rel.iplt      0x080038d0        0x0 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x080038c4        0x0
+ .rel.iplt      0x080038c4        0x0 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.data           0x20000000       0x10 load address 0x080038d0
+.data           0x20000000       0x10 load address 0x080038c4
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -1693,19 +1693,19 @@ LOAD C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1
  *(.RamFunc*)
                 0x20000010                        . = ALIGN (0x4)
                 0x20000010                        _edata = .
-                0x080038e0                        _siccmram = LOADADDR (.ccmram)
+                0x080038d4                        _siccmram = LOADADDR (.ccmram)
 
 .tm_clone_table
-                0x20000010        0x0 load address 0x080038e0
+                0x20000010        0x0 load address 0x080038d4
  .tm_clone_table
                 0x20000010        0x0 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000010        0x0 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtend.o
 
-.igot.plt       0x20000010        0x0 load address 0x080038e0
+.igot.plt       0x20000010        0x0 load address 0x080038d4
  .igot.plt      0x20000010        0x0 C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.ccmram         0x10000000        0x0 load address 0x080038e0
+.ccmram         0x10000000        0x0 load address 0x080038d4
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _sccmram = .
  *(.ccmram)
@@ -1900,49 +1900,49 @@ LOAD C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1
 LOAD C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libm.a
 LOAD C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0xeadc
+.debug_info     0x00000000     0xe9d5
  .debug_info    0x00000000      0xd17 CMakeFiles/steer_gimbal.elf.dir/Core/Src/can.c.obj
  .debug_info    0x00000d17      0x4d9 CMakeFiles/steer_gimbal.elf.dir/Core/Src/dma.c.obj
  .debug_info    0x000011f0      0x45c CMakeFiles/steer_gimbal.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x0000164c      0xe54 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
- .debug_info    0x000024a0      0x265 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x00002705      0xae8 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x000031ed      0x334 CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_info    0x00003521      0xc9d CMakeFiles/steer_gimbal.elf.dir/Core/Src/usart.c.obj
- .debug_info    0x000041be       0x30 CMakeFiles/steer_gimbal.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
- .debug_info    0x000041ee      0x9e2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_info    0x00004bd0     0x11f7 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
- .debug_info    0x00005dc7      0xff5 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_info    0x00006dbc      0xad9 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_info    0x00007895      0x704 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_info    0x00007f99      0xa6d CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_info    0x00008a06     0x4000 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_info    0x0000ca06      0x794 CMakeFiles/steer_gimbal.elf.dir/User/Snc/dr16.c.obj
- .debug_info    0x0000d19a      0x7cc CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
- .debug_info    0x0000d966      0xd51 CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
- .debug_info    0x0000e6b7      0x425 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
+ .debug_info    0x0000164c      0xd4d CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00002399      0x265 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x000025fe      0xae8 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x000030e6      0x334 CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_info    0x0000341a      0xc9d CMakeFiles/steer_gimbal.elf.dir/Core/Src/usart.c.obj
+ .debug_info    0x000040b7       0x30 CMakeFiles/steer_gimbal.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
+ .debug_info    0x000040e7      0x9e2 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_info    0x00004ac9     0x11f7 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+ .debug_info    0x00005cc0      0xff5 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_info    0x00006cb5      0xad9 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_info    0x0000778e      0x704 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_info    0x00007e92      0xa6d CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_info    0x000088ff     0x4000 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_info    0x0000c8ff      0x794 CMakeFiles/steer_gimbal.elf.dir/User/Snc/dr16.c.obj
+ .debug_info    0x0000d093      0x7cc CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
+ .debug_info    0x0000d85f      0xd51 CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
+ .debug_info    0x0000e5b0      0x425 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
 
-.debug_abbrev   0x00000000     0x2805
+.debug_abbrev   0x00000000     0x27f7
  .debug_abbrev  0x00000000      0x241 CMakeFiles/steer_gimbal.elf.dir/Core/Src/can.c.obj
  .debug_abbrev  0x00000241      0x12b CMakeFiles/steer_gimbal.elf.dir/Core/Src/dma.c.obj
  .debug_abbrev  0x0000036c      0x164 CMakeFiles/steer_gimbal.elf.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x000004d0      0x286 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
- .debug_abbrev  0x00000756       0xd6 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_abbrev  0x0000082c      0x1f1 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_abbrev  0x00000a1d      0x120 CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_abbrev  0x00000b3d      0x24a CMakeFiles/steer_gimbal.elf.dir/Core/Src/usart.c.obj
- .debug_abbrev  0x00000d87       0x24 CMakeFiles/steer_gimbal.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
- .debug_abbrev  0x00000dab      0x240 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_abbrev  0x00000feb      0x27b CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
- .debug_abbrev  0x00001266      0x391 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_abbrev  0x000015f7      0x2c0 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_abbrev  0x000018b7      0x202 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_abbrev  0x00001ab9      0x2c7 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_abbrev  0x00001d80      0x32f CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_abbrev  0x000020af      0x1dc CMakeFiles/steer_gimbal.elf.dir/User/Snc/dr16.c.obj
- .debug_abbrev  0x0000228b      0x1b3 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
- .debug_abbrev  0x0000243e      0x260 CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
- .debug_abbrev  0x0000269e      0x167 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
+ .debug_abbrev  0x000004d0      0x278 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x00000748       0xd6 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_abbrev  0x0000081e      0x1f1 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_abbrev  0x00000a0f      0x120 CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_abbrev  0x00000b2f      0x24a CMakeFiles/steer_gimbal.elf.dir/Core/Src/usart.c.obj
+ .debug_abbrev  0x00000d79       0x24 CMakeFiles/steer_gimbal.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
+ .debug_abbrev  0x00000d9d      0x240 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_abbrev  0x00000fdd      0x27b CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+ .debug_abbrev  0x00001258      0x391 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_abbrev  0x000015e9      0x2c0 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_abbrev  0x000018a9      0x202 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_abbrev  0x00001aab      0x2c7 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_abbrev  0x00001d72      0x32f CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_abbrev  0x000020a1      0x1dc CMakeFiles/steer_gimbal.elf.dir/User/Snc/dr16.c.obj
+ .debug_abbrev  0x0000227d      0x1b3 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
+ .debug_abbrev  0x00002430      0x260 CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
+ .debug_abbrev  0x00002690      0x167 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
 
 .debug_loclists
                 0x00000000     0x51d5
@@ -2062,34 +2062,34 @@ LOAD C:/clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/13.3.1
  .debug_rnglists
                 0x00000707       0x21 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
 
-.debug_line     0x00000000     0x9aa1
+.debug_line     0x00000000     0x9a9e
  .debug_line    0x00000000      0x467 CMakeFiles/steer_gimbal.elf.dir/Core/Src/can.c.obj
  .debug_line    0x00000467      0x19d CMakeFiles/steer_gimbal.elf.dir/Core/Src/dma.c.obj
  .debug_line    0x00000604      0x1dc CMakeFiles/steer_gimbal.elf.dir/Core/Src/gpio.c.obj
- .debug_line    0x000007e0      0x41f CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
- .debug_line    0x00000bff      0x165 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x00000d64      0x353 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x000010b7      0x22c CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_line    0x000012e3      0x379 CMakeFiles/steer_gimbal.elf.dir/Core/Src/usart.c.obj
- .debug_line    0x0000165c       0x7a CMakeFiles/steer_gimbal.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
- .debug_line    0x000016d6      0x595 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_line    0x00001c6b     0x1179 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
- .debug_line    0x00002de4      0x858 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_line    0x0000363c      0xe51 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_line    0x0000448d      0x713 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_line    0x00004ba0      0xbdb CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_line    0x0000577b     0x34eb CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_line    0x00008c66      0x305 CMakeFiles/steer_gimbal.elf.dir/User/Snc/dr16.c.obj
- .debug_line    0x00008f6b      0x2c5 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
- .debug_line    0x00009230      0x6ef CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
- .debug_line    0x0000991f      0x182 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
+ .debug_line    0x000007e0      0x41c CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x00000bfc      0x165 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x00000d61      0x353 CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x000010b4      0x22c CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_line    0x000012e0      0x379 CMakeFiles/steer_gimbal.elf.dir/Core/Src/usart.c.obj
+ .debug_line    0x00001659       0x7a CMakeFiles/steer_gimbal.elf.dir/Core/Startup/startup_stm32f407ighx.s.obj
+ .debug_line    0x000016d3      0x595 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_line    0x00001c68     0x1179 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+ .debug_line    0x00002de1      0x858 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_line    0x00003639      0xe51 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_line    0x0000448a      0x713 CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_line    0x00004b9d      0xbdb CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_line    0x00005778     0x34eb CMakeFiles/steer_gimbal.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_line    0x00008c63      0x305 CMakeFiles/steer_gimbal.elf.dir/User/Snc/dr16.c.obj
+ .debug_line    0x00008f68      0x2c5 CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj
+ .debug_line    0x0000922d      0x6ef CMakeFiles/steer_gimbal.elf.dir/User/Snc/mycan.c.obj
+ .debug_line    0x0000991c      0x182 CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj
 
 .debug_str      0x00000000     0x3257
  .debug_str     0x00000000     0x3257 CMakeFiles/steer_gimbal.elf.dir/Core/Src/can.c.obj
                                 0xb8b (size before relaxing)
  .debug_str     0x00003257      0x7cf CMakeFiles/steer_gimbal.elf.dir/Core/Src/dma.c.obj
  .debug_str     0x00003257      0x37c CMakeFiles/steer_gimbal.elf.dir/Core/Src/gpio.c.obj
- .debug_str     0x00003257      0xae7 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
+ .debug_str     0x00003257      0xa75 CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj
  .debug_str     0x00003257      0x2bd CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_str     0x00003257      0x9eb CMakeFiles/steer_gimbal.elf.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_str     0x00003257      0x323 CMakeFiles/steer_gimbal.elf.dir/Core/Src/system_stm32f4xx.c.obj

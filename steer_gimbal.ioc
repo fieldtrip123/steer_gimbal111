@@ -2,7 +2,7 @@
 CAD.formats=
 CAD.pinconfig=
 CAD.provider=
-CAN1.ABOM=DISABLE
+CAN1.ABOM=ENABLE
 CAN1.BS1=CAN_BS1_2TQ
 CAN1.BS2=CAN_BS2_3TQ
 CAN1.CalculateBaudRate=999999
@@ -10,7 +10,7 @@ CAN1.CalculateTimeBit=1000
 CAN1.CalculateTimeQuantum=166.66666666666669
 CAN1.IPParameters=CalculateTimeQuantum,CalculateTimeBit,CalculateBaudRate,BS1,BS2,Prescaler,ABOM
 CAN1.Prescaler=7
-CAN2.ABOM=DISABLE
+CAN2.ABOM=ENABLE
 CAN2.BS1=CAN_BS1_2TQ
 CAN2.BS2=CAN_BS2_3TQ
 CAN2.CalculateBaudRate=999999
