@@ -31,6 +31,7 @@
 extern uint8_t UART_RECV[512];
 extern motor_t  yaw_6020_info;
 extern boardA_info boardA_info1;
+extern pid_struct_t gimbal_pitch_speed_pid;
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -112,11 +113,15 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-if(boardA_info1.UART_flag1==2&&boardA_info1.UART_flag2==3)
+      control_pitch_6020(boardA_info1.UART_pitch);
+    if(boardA_info1.UART_flag1==2&&boardA_info1.UART_flag2==3)
 {
     control_yaw_6020(boardA_info1.UART_yaw);
 }
-     control_pitch_6020(boardA_info1.UART_pitch);
+else  {
+    set_m6020_v(0,gimbal_pitch_speed_pid.output);
+}
+
         shoot();
       HAL_Delay(1);
   }

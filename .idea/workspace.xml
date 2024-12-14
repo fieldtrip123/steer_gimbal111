@@ -21,13 +21,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="500bb1c3-1466-492a-b9e2-15471a3da272" name="更改" comment="test">
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-27d4240945e17b57a4da.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-7d50fc64e19774a035ad.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-fb9d756ed450b20cf270.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-12-12T12-32-43-0668.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-steer_gimbal.elf-Debug-107a8ee73d576bc615a7.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/Snc/gimbal_control.c" beforeDir="false" afterPath="$PROJECT_DIR$/User/Snc/gimbal_control.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/Snc/pid.c" beforeDir="false" afterPath="$PROJECT_DIR$/User/Snc/pid.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/steer_gimbal.elf.dir/Core/Src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/steer_gimbal.elf.dir/User/Snc/gimbal_control.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/steer_gimbal.elf.dir/User/Snc/pid.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/steer_gimbal.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/steer_gimbal.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/steer_gimbal.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/steer_gimbal.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/steer_gimbal.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/steer_gimbal.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/steer_gimbal.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/steer_gimbal.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +146,8 @@
       <workItem from="1733988729305" duration="2278000" />
       <workItem from="1734001847002" duration="655000" />
       <workItem from="1734009243384" duration="3209000" />
-      <workItem from="1734088433164" duration="2861000" />
+      <workItem from="1734088433164" duration="3838000" />
+      <workItem from="1734155777267" duration="4853000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -157,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734010940217</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <option name="closed" value="true" />
+      <created>1734102075482</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734102075482</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -26,7 +26,7 @@ uint16_t now_yaw_enc;
 uint16_t now_pitch_enc;
 void control_yaw_6020(int16_t theta0)
 {
-      if   ((yaw_6020_info.last_target-theta0*DEG2ENC)>4096)
+      /*if   ((yaw_6020_info.last_target-theta0*DEG2ENC)>4096)
     {
         yaw_6020_info.target_count++;
     }
@@ -42,7 +42,13 @@ void control_yaw_6020(int16_t theta0)
    /* yaw_6020_info.last_target=encode0+theta0*DEG2ENC;*/
 
     /*now_yaw_enc=yaw_6020_info.rotor_angle  ;*/
-    angle =  pid_calc(&gimbal_yaw_angle_pid, target_yaw_enc, yaw_6020_info.add_encode);//角度环
+   /* angle =  pid_calc(&gimbal_yaw_angle_pid, target_yaw_enc, yaw_6020_info.add_encode);//角度环
+    pid_calc(&gimbal_yaw_speed_pid,angle, yaw_6020_info.rotor_speed);
+    set_m6020_v(gimbal_yaw_speed_pid.output,gimbal_pitch_speed_pid.output);*/
+    float angle;
+    yaw_6020_info.add_target=encode0+theta0*DEG2ENC;
+    now_yaw_enc=yaw_6020_info.rotor_angle;
+    angle =  pid_calc(&gimbal_yaw_angle_pid, yaw_6020_info.add_target, now_yaw_enc);//角度环
     pid_calc(&gimbal_yaw_speed_pid,angle, yaw_6020_info.rotor_speed);
     set_m6020_v(gimbal_yaw_speed_pid.output,gimbal_pitch_speed_pid.output);
 }
@@ -82,7 +88,7 @@ void shoot()
         control_shoot_3508(200,200);
         control_2006(30);
     }
-    if(boardA_info1.UART_flag1==1&&boardA_info1.UART_flag2==2)
+    else
     {
         stop_shoot();
 

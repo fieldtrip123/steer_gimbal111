@@ -51,9 +51,9 @@ float pid_calc(pid_struct_t *pid, float ref, float fdb)
 
 void all_pid_init()
 {
-    pid_init(&gimbal_yaw_speed_pid, 80, 0, 0,30000, 30000);//P=85,I=0,D=0
+    pid_init(&gimbal_yaw_speed_pid, 10, 0, 0,30000, 30000);//P=85,I=0,D=0
     pid_init(&gimbal_yaw_angle_pid, 1, 0, 0, -1000, 1000);//P=1,I=0,D=0
-    pid_init(&gimbal_pitch_speed_pid, 40, 0, 0,16000, 16000);//P=85,I=0,D=0
+    pid_init(&gimbal_pitch_speed_pid, 80, 0, 0,16000, 16000);//P=85,I=0,D=0
     pid_init(&gimbal_pitch_angle_pid, 1, 0, 0, -100, 100);//P=1,I=0,D=0
     pid_init(&shoot_m2006_pid, 1, 0, 0, -100, 100);//P=1,I=0,D=0
     for (int i =0;i<2;i++)
